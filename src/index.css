@@ -1,3 +1,18 @@
+@import url("./assets/normalize.css");
+@import url("./assets/fonts/inter.css");
+@import url("./assets/fonts/montserrat.css");
+
 :root {
+  /* CSS vars */
+  --page-background: #0e1014;
+  --light-text-color: #e4e5ea;
+  max-width: 1140px;
+  margin: 53px auto 20px;
+  background-color: var(--page-background);
+
   font-family: Inter, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
 }
