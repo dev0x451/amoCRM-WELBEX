@@ -1,0 +1,31 @@
+.contacts__tel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--light-text-color);
+  text-decoration: none;
+}
+
+.contacts__social-icons {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+
+@media screen and (max-width: 320px) {
+  .contacts__social-icons {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.contacts__telegram {
+  background-image: url("../assets/telegram.svg");
+}
+
+.contacts__viber {
+  background-image: url("../assets/viber.svg");
+}
+.contacts__whatsapp {
+  background-image: url("../assets/whatsapp.svg");
+}

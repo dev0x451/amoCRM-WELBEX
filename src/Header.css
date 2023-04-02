@@ -7,6 +7,32 @@
   align-items: center;
 }
 
+@media screen and (max-width: 320px) {
+  .header-desktop {
+    display: none;
+  }
+}
+
+.header-mobile {
+  margin: 0;
+  padding: 0 16px;
+  min-height: 55px;
+  width: 100%;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0e1014;
+}
+
+@media screen and (max-width: 320px) {
+  .header-mobile {
+    display: flex;
+  }
+}
+
 .header-left {
   display: flex;
   align-items: center;
@@ -35,10 +61,24 @@
   list-style-type: none;
 }
 
+.header__menu_mobile {
+  margin: 0 0 0 0;
+  width: 100%;
+  gap: 16px;
+}
+
 .header__menu-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  color: var(--light-text-color);
+}
+
+.header__menu-item_mobile {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
   color: var(--light-text-color);
 }
 
@@ -48,11 +88,7 @@
   width: 307px;
 }
 
-.header__tel {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: right;
+.header__tel:visited {
   color: var(--light-text-color);
 }
 
@@ -60,21 +96,4 @@
   display: flex;
   justify-content: space-between;
   width: 120px;
-}
-
-.header__social-telegram {
-  background-image: url("./assets/telegram.svg");
-  width: 20px;
-  height: 20px;
-}
-
-.header__social-viber {
-  background-image: url("./assets/viber.svg");
-  width: 20px;
-  height: 20px;
-}
-.header__social-whatsapp {
-  background-image: url("./assets/whatsapp.svg");
-  width: 20px;
-  height: 20px;
 }

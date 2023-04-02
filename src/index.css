@@ -5,12 +5,23 @@
 :root {
   /* CSS vars */
   --page-background: #0e1014;
+  --cta-button-background: #4077f3;
   --light-text-color: #e4e5ea;
-  max-width: 1140px;
+  max-width: 1144px;
   margin: 53px auto 20px;
+  padding: 0 30px;
   background-color: var(--page-background);
 
   font-family: Inter, Arial, sans-serif;
+}
+
+@media screen and (max-width: 320px) {
+  :root {
+    margin: 0;
+    padding: 0;
+    max-width: 320px;
+    overflow: hidden;
+  }
 }
 
 * {
